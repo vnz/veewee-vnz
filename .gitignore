@@ -1,0 +1,4 @@
+iso/*.iso
+Gemfile.lock
+*.pem
+*.box
