@@ -19,7 +19,7 @@ Veewee definitions based on 'ubuntu-12.04.1-server-amd64-packages' templates
 ## One time setup after cloning
 
     $ gem install bundler --no-ri --no-rdoc
-    $ cd veewee-ebz
+    $ cd veewee-vnz
     $ bundle install
 
 ## Build a box
@@ -34,4 +34,9 @@ Veewee definitions based on 'ubuntu-12.04.1-server-amd64-packages' templates
 ## Packaging for chef-server
 
     $ vagrant package --base precise --output dev.box --vagrantfile Vagrantfile.pkg --include validation.pem
+
+## Add to vagrant
+
+    $ vagrant box add precise precise.box
+
 
