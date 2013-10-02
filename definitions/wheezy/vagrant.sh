@@ -16,7 +16,7 @@ chmod 0644 /home/vagrant/.bashrc
 chown -R vagrant:vagrant /home/vagrant
 
 # Customize the message of the day
-echo 'Welcome to your Ebz.io virtual machine.' > /var/run/motd
+echo 'Welcome to your Ebz.io virtual machine.' > /etc/motd
 
 # Install NFS client
 apt-get -y install nfs-common
