@@ -43,7 +43,7 @@ Veewee::Definition.declare({
     "virtualbox.sh",
     #"vmfusion.sh",
     "ruby.sh",
-    "puppet.sh",
+    #"puppet.sh",
     "chef.sh",
     "cleanup-virtualbox.sh",
     "cleanup.sh",
