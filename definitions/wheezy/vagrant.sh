@@ -14,6 +14,9 @@ curl -Lo /home/vagrant/.bashrc \
   'https://raw.github.com/vnz/veewee-vnz/master/dotfiles/bashrc'
 chmod 0644 /home/vagrant/.bashrc
 chown -R vagrant:vagrant /home/vagrant
+curl -Lo /root/.bashrc \
+  'https://raw.github.com/vnz/veewee-vnz/master/dotfiles/bashrc'
+
 
 # Customize the message of the day
 echo 'Welcome to your Ebz.io virtual machine.' > /etc/motd
