@@ -10,7 +10,10 @@ mkdir -pm 700 /home/vagrant/.ssh
 curl -Lo /home/vagrant/.ssh/authorized_keys \
   'https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub'
 chmod 0600 /home/vagrant/.ssh/authorized_keys
-chown -R vagrant:vagrant /home/vagrant/.ssh
+curl -Lo /home/vagrant/.bashrc \
+  'https://raw.github.com/vnz/veewee-vnz/master/dotfiles/bashrc'
+chmod 0644 /home/vagrant/.bashrc
+chown -R vagrant:vagrant /home/vagrant
 
 # Customize the message of the day
 echo 'Welcome to your Ebz.io virtual machine.' > /var/run/motd
