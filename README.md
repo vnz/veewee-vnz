@@ -25,18 +25,20 @@ Veewee definitions based on 'ubuntu-12.04.1-server-amd64-packages' templates
 ## Build a box
 
     $ bundle exec veewee vbox list
-    $ bundle exec veewee vbox build -n precise
+    $ export VEEWEE_CHEF_INSTALLMETHOD=omnibus
+    $ export VEEWEE_CHEF_VERSION=11.4.4
+    $ bundle exec veewee vbox build -n wheezy
 
 ## Packaging for berkshelf and test-kitchen
 
-    $ bundle exec veewee vbox export precise
+    $ bundle exec veewee vbox export wheezy
 
 ## Packaging for chef-server
 
-    $ vagrant package --base precise --output dev.box --vagrantfile Vagrantfile.pkg --include validation.pem
+    $ vagrant package --base wheezy --output dev.box --vagrantfile Vagrantfile.pkg --include validation.pem
 
 ## Add to vagrant
 
-    $ vagrant box add precise precise.box
+    $ vagrant box add wheezy wheezy.box
 
 

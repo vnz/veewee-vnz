@@ -1,2 +1,0 @@
-export CHEF_INSTALLMETHOD='omnibus'
-export CHEF_VERSION='11.4.4'
