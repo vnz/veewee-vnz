@@ -1,0 +1,12 @@
+[user]
+  name = CHANGEME
+  email = CHANGEME
+[core]
+  editor = vi
+[merge]
+  tool = vimdiff
+[user]
+  color = true
+[github]
+  user = CHANGEME
+  token = CHANGEME
